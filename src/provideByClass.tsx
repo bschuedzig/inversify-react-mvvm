@@ -6,7 +6,7 @@ import { fluentProvide } from 'inversify-binding-decorators'
  */
 export const provideByClass = () => {
 
-  return (ctor: Ctor) => {
+  return (ctor: { new(...args: any[]): any }) => {
 
     return fluentProvide(ctor).inSingletonScope().done()(ctor);
   }

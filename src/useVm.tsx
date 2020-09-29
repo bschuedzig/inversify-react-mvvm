@@ -6,7 +6,7 @@ import { ViewModel } from './ViewModel';
  * Get a view model from the di container
  * This method also attaches onLoad/onLeave handlers
  */
-export function useVm<TViewModel extends ViewModel>(ctor: Ctor<TViewModel>): TViewModel {
+export function useVm<TViewModel extends ViewModel>(ctor: { new(...args: any[]): TViewModel }): TViewModel {
 
   // we are using useRef to make sure that we only have once instance
   var vmRef = (useRef(null) as any as React.MutableRefObject<TViewModel>);
