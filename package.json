@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
+  "repository": "git@github.com:bschuedzig/inversify-react-mvvm.git",
+  "homepage": "https://github.com/bschuedzig/inversify-react-mvvm",
+  "bugs": "https://github.com/bschuedzig/inversify-react-mvvm/issues",
+  "keywords": ["mvvm", "pm", "react", "inversify", "viewmodel"],
   "jest": {
     "preset": "ts-jest",
     "setupFiles": ["./test/setup.ts"]
